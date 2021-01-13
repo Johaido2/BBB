@@ -59,6 +59,7 @@ public class ReservationService {
     long count = barTableRepository.count();
     while(count < 6) {
         barTableRepository.save(new BarTable());
+        count = barTableRepository.count();
         }
     }
 }
