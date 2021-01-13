@@ -137,7 +137,7 @@ function registerCustomer(username, firstname, lastname, email, tel, password, c
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/user/register",
+        url: serviceEndpointURL + "/login",
         data: JSON.stringify({
             "username": username,
             "firstname": firstname,

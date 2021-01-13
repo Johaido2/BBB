@@ -55,11 +55,10 @@ public class ReservationService {
     }
 
     @PostConstruct
-    private void initTables () {
+    private void initTables() {
+    long count = barTableRepository.count();
+    while(count < 6) {
         barTableRepository.save(new BarTable());
-        barTableRepository.save(new BarTable());
-        barTableRepository.save(new BarTable());
-        barTableRepository.save(new BarTable());
-        barTableRepository.save(new BarTable());
+        }
     }
 }

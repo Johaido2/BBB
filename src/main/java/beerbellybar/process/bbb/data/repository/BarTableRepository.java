@@ -13,4 +13,5 @@ import java.util.List;
 public interface BarTableRepository extends JpaRepository<BarTable, Long> {
     List<BarTable> findByReservationReservationTime(Date reservationTime);
     List<BarTable> findByReservationReservationTimeNot(Date reservationTime);
+    List<BarTable> findAllById(Long id);
 }

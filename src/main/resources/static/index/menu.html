@@ -30,7 +30,7 @@
                 </ul>
                 
                
-                <a class="nav-link active" href="/login">
+                <a class="nav-link active loggedOut" href="/login">
                     <button class="btn btn-primary button-registration" type="button"><strong>SIGN UP/ LOG IN</strong>
                     </button>
                 </a>
@@ -125,6 +125,21 @@
         });
     </script>
 
+    <!-- how it works
+    <script language="JavaScript">
+        $(document).ready(function () {
+            var result = Math.random();
+            if (result >0.5) {
+                $(".loggedIn").show();
+                $(".loggedOut").hide();
+                $("#test").html(result);
+            } else {
+                $(".loggedOut").show();
+                $(".loggedIn").hide();
+                $("#test").html(result);
+            }
+        });
+    </script>-->
 </body>
 
 </html>
